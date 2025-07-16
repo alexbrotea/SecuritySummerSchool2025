@@ -24,8 +24,6 @@ def get_flag_from_ctf():
         b64 = re.search(r"[A-Za-z0-9+/]{20,}={0,2}", text)
         if b64:
             print("Found Base64-looking string:", b64.group(0))
-        else:
-            print("No flag or Base64 string detected.")
 
 if __name__ == "__main__":
     get_flag_from_ctf()
