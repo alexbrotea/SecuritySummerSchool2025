@@ -11,4 +11,4 @@ flag_re = re.compile(r'(SSS)\{[^}]+\}')
 for user in payload:
     for v in user.values():
         if isinstance(v, str) and flag_re.search(v):
-            print("[!] FLAG găsit:", flag_re.search(v).group(0))
+            print(flag_re.search(v).group(0))

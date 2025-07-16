@@ -14,7 +14,7 @@ def build_url(args):
     if args[1] == "remote":
         return f"http://141.85.224.115:{PORT}"
     
-    print("Invalid argument")
+    print("Invalid")
     sys.exit()
 
 def main():
@@ -26,7 +26,7 @@ def main():
         flag = response.text.split("SSS")[1].split("\\")[0]
         print("SSS" + flag)
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Eroare: {e}")
 
 if __name__ == "__main__":
     main()
