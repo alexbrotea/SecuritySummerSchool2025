@@ -1,14 +1,14 @@
 set -euo pipefail
 IFS =$'\n\t'
 
-PORT=8083
+PORT = 8083
 
 usage() {
   cat <<EOF
 Usage: $0 {local|remote|<host>} [port]
-  local           →  http://127.0.0.1:\$PORT
-  remote          →  http://141.85.224.115:\$PORT
-  <host> [port]   →  http://<host>:<port>
+  local → http://127.0.0.1:\$PORT
+  remote → http://141.85.224.115:\$PORT
+  <host> [port] → http://<host>:<port>
 EOF
   exit 1
 }
